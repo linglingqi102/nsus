@@ -1,0 +1,13 @@
+
+.normal {
+  font-family: Georgia, sans-serif;
+  text-align: center;
+}
+
+.title {
+  height: 220px;
+  background: url(../assets/title.jpg) no-repeat center 0;
+  background-size: 100% 220px;
+  margin: 0;
+}
+
