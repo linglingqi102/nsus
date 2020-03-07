@@ -2,6 +2,10 @@
 // ref: https://umijs.org/config/
 export default {
   treeShaking: true,
+  ssr: true,
+  targets: {
+    ie: 11,
+  },
   routes: [
     {
       path: '/',
