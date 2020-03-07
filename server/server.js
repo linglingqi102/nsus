@@ -73,8 +73,8 @@ app.use(
 app.use(staticServe(root));
 
 if (!process.env.NOW_ZEIT_ENV) {
-  app.listen(8080);
-  console.log('http://localhost:8080');
+  app.listen(80);
+  console.log('http://localhost:80');
 }
 
 module.exports = app.callback();
