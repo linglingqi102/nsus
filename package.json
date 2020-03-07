@@ -2,6 +2,7 @@
   "name": "nsus2020",
   "version": "0.1.0",
   "private": true,
+  "main": "server/server.js",
   "scripts": {
     "dev": "umi dev",
     "start": "umi build && NODE_ENV=production node server/server.js",
