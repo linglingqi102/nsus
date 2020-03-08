@@ -70,7 +70,7 @@ app.use(async (ctx, next) => {
   }
 });
 
-app.use(staticServe(root));
+app.use(staticServe(root,{'maxage': 31536000}));
 
 if (!process.env.NOW_ZEIT_ENV) {
   app.listen(80);

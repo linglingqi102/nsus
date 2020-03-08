@@ -4,7 +4,7 @@ export default {
   treeShaking: true,
   ssr: true,
   targets: {
-    ie: 11,
+    ie: 9,
   },
   routes: [
     {
@@ -23,7 +23,6 @@ export default {
       dynamicImport: { webpackChunkName: true },
       title: 'nsus',
       dll: false,
-      
       routes: {
         exclude: [
           /models\//,
