@@ -6,7 +6,7 @@
 
 .title {
   height: 220px;
-  background: url('http://nsus-static.oss-cn-beijing.aliyuncs.com/title2.jpg?OSSAccessKeyId=LTAI4FqzREY3Ruc46ST6VnPr&Expires=1583639247&Signature=pmZFTd34eZMxx0MMmQOen5vCVcw%3D') no-repeat center 0;
+  background: url('http://nsus-static.oss-cn-beijing.aliyuncs.com/title2.jpg') no-repeat center 0;
   background-size: 100% 220px;
   margin: 0;
 }
