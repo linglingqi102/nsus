@@ -46,10 +46,10 @@ app.use(
   }),
 );
 
-app.use(async (ctx, next) => {
-  //设置协商缓存，强制缓存失效后，请求对比服务器文件最后更改时间
-  ctx.append('Last-Modified', new Date());
-})
+// app.use(async (ctx, next) => {
+//   //设置协商缓存，强制缓存失效后，请求对比服务器文件最后更改时间
+//   ctx.append('Last-Modified', new Date());
+// })
 
 app.use(async (ctx, next) => {
   const ext = extname(ctx.request.path);
@@ -70,7 +70,7 @@ app.use(async (ctx, next) => {
   }
 });
 
-app.use(staticServe(root,{'maxage': 5*60*1000}));
+app.use(staticServe(root,{'maxage': 300000}));
 
 if (!process.env.NOW_ZEIT_ENV) {
   app.listen(80);
