@@ -1,5 +1,7 @@
 
 // ref: https://umijs.org/config/
+const { join } = require('path');
+const root = join(__dirname, 'src');
 export default {
   treeShaking: true,
   ssr: true,
@@ -15,6 +17,10 @@ export default {
       ]
     }
   ],
+  chainWebpack(config, { webpack }) {
+    // 设置 alias
+    config.resolve.alias.set('root', root);
+  },
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
