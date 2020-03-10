@@ -10,4 +10,10 @@
   background-size: 100% 220px;
   margin: 0;
 }
+.headernav{
+  width: 1200px;
+  height: 35px;
+  margin:0 auto;
+  background: #001529;
+}
 
