@@ -1,9 +1,9 @@
-import styles from './index.css';
+import styles from './index.less';
 import Helmet from 'react-helmet';
 import Footer from '../components/Footer'
-import { Menu, Icon } from 'antd';
+import { Menu } from 'antd';
 
-const { SubMenu } = Menu;
+const { SubMenu, Item } = Menu;
 
 function BasicLayout(props) {
   const state = {
@@ -22,23 +22,22 @@ function BasicLayout(props) {
         <link rel="icon" href={require('root/assets/favicon.ico')} />
       </Helmet>
       <div className={styles.title} />
-      <div className={styles.headernav}>
-        <Menu onClick={handleClick} selectedKeys={[state.current]} theme="dark" mode="horizontal">
-          <Menu.Item key="index">
-            <a href="https://ant.design" target="_blank">
+      <Menu onClick={handleClick} className={styles.headernav} selectedKeys={[state.current]} theme="dark" mode="horizontal">
+          <Item key="index">
+            <a href="https://ant.design" >
               首页
             </a>
-          </Menu.Item>
-          <Menu.Item key="index1">
-            <a href="https://ant.design" target="_blank">
+          </Item>
+          <Item key="index1">
+            <a href="https://ant.design" >
               组织机构
             </a>
-          </Menu.Item>
-          <Menu.Item key="index2">
-            <a href="https://ant.design" target="_blank">
+          </Item>
+          <Item key="index2">
+            <a href="https://ant.design" >
               会议日程
             </a>
-          </Menu.Item>
+          </Item>
           <SubMenu
             title={
               <span className="submenu-title-wrapper">
@@ -46,26 +45,26 @@ function BasicLayout(props) {
               </span>
             }
           >
-            <Menu.Item title="Item 1">
+            <Item title="Item 1">
               大会报告
-            </Menu.Item>
-            <Menu.Item title="Item 2">
+            </Item>
+            <Item title="Item 2">
               邀请报告
-            </Menu.Item>
-            <Menu.Item title="Item 3">
+            </Item>
+            <Item title="Item 3">
               张贴报告
-            </Menu.Item>
+            </Item>
           </SubMenu>
-          <Menu.Item key="index4">
-            <a href="https://ant.design" target="_blank">
+          <Item key="index4">
+            <a href="https://ant.design" >
               会议主题
             </a>
-          </Menu.Item>
-          <Menu.Item key="index5">
-            <a href="https://ant.design" target="_blank">
+          </Item>
+          <Item key="index5">
+            <a href="https://ant.design" >
               期刊支持
             </a>
-          </Menu.Item>
+          </Item>
           <SubMenu
             title={
               <span className="submenu-title-wrapper">
@@ -73,35 +72,34 @@ function BasicLayout(props) {
               </span>
             }
           >
-            <Menu.Item title="Item 5">
+            <Item title="Item 5">
               酒店信息
-            </Menu.Item>
-            <Menu.Item title="Item 4">
+            </Item>
+            <Item title="Item 4">
               交通信息
-            </Menu.Item>
+            </Item>
           </SubMenu>
-          <Menu.Item key="index6">
-            <a href="https://ant.design" target="_blank">
+          <Item key="index6">
+            <a href="https://ant.design">
               历届会议
             </a>
-          </Menu.Item>
-          <Menu.Item key="index7">
-            <a href="https://ant.design" target="_blank">
+          </Item>
+          <Item key="index7">
+            <a href="https://ant.design">
               赞助信息
             </a>
-          </Menu.Item>
-          <Menu.Item key="index8">
-            <a href="https://ant.design" target="_blank">
+          </Item>
+          <Item key="index8">
+            <a href="https://ant.design">
               联系我们
             </a>
-          </Menu.Item>
-          <Menu.Item key="alipay">
-            <a href="https://ant.design" target="_blank">
+          </Item>
+          <Item key="alipay">
+            <a href="https://ant.design">
               大会照片
             </a>
-          </Menu.Item>
-        </Menu>
-      </div>
+          </Item>
+      </Menu>
       <div className={styles.content}>
         {props.children}
       </div>
