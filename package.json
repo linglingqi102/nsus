@@ -20,6 +20,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-router-breadcrumbs-hoc": "^3.2.9",
     "umi-server": "^1.2.2"
   },
   "devDependencies": {

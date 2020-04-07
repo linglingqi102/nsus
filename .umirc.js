@@ -1,6 +1,6 @@
-
 // ref: https://umijs.org/config/
 const { join } = require('path');
+
 const root = join(__dirname, 'src');
 export default {
   treeShaking: true,
@@ -13,31 +13,93 @@ export default {
       path: '/',
       component: '../layouts/index',
       routes: [
-        { path: '/', component: '../pages/index' }
-      ]
-    }
+        {
+          path: '/organization',
+          component: './organization/organization',
+        },
+        {
+          path: '/meeting',
+          component: './meeting/meeting',
+        },
+        {
+          path: '/report/conference',
+          component: './report/conference',
+        },
+        {
+          path: '/report/invitation',
+          component: './report/invitation',
+        },
+        {
+          path: '/report/post',
+          component: './report/post',
+        },
+        {
+          path: '/report',
+          component: './report/report',
+        },
+        {
+          path: '/theme',
+          component: './theme/theme',
+        },
+        {
+          path: '/previous',
+          component: './previous/previous',
+        },
+        {
+          path: '/sponsorship',
+          component: './sponsorship/sponsorship',
+        },
+        {
+          path: '/contact',
+          component: './contact/contact',
+        },
+        {
+          path: '/photo',
+          component: './photo/photo',
+        },
+        {
+          path: '/info/hotel',
+          component: './info/hotel',
+        },
+        {
+          path: '/info/traffic',
+          component: './info/traffic',
+        },
+        {
+          path: '/',
+          component: '../pages/index',
+        },
+      ],
+    },
   ],
+
   chainWebpack(config, { webpack }) {
     // 设置 alias
     config.resolve.alias.set('root', root);
   },
+
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
-    ['umi-plugin-react', {
-      antd: true,
-      dva: true,
-      dynamicImport: { webpackChunkName: true },
-      title: 'nsus',
-      dll: false,
-      routes: {
-        exclude: [
-          /models\//,
-          /services\//,
-          /model\.(t|j)sx?$/,
-          /service\.(t|j)sx?$/,
-          /components\//,
-        ],
+    [
+      'umi-plugin-react',
+      {
+        antd: true,
+        dva: true,
+        dynamicImport: {
+          webpackChunkName: true,
+        },
+        title: 'nsus',
+        dll: false,
+        routes: {
+          exclude: [
+            /models\//,
+            /services\//,
+            /model\.(t|j)sx?$/,
+            /service\.(t|j)sx?$/,
+            /components\//,
+          ],
+        },
       },
-    }],
+    ],
   ],
-}
+};

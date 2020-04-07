@@ -1,0 +1,102 @@
+
+.normal {
+  /* font-family: Georgia, sans-serif; */
+  padding: 15px 20px;
+  display: flex;
+  .left {
+     width: 200px;
+     background: white;
+     min-height: 500px;
+     .llist {
+       padding: 8px 8px;
+       .news> li{
+        display: block;
+        background: url('../assets/line_01.png') bottom no-repeat;
+        padding: 2px 0 9px 0;
+        width: 100%;
+        >a {
+          color: #2c3237;
+          line-height: 26px;
+          background: url(../assets/icon_02.gif) 8px 10px no-repeat;
+          text-indent: 18px;
+          display: block;
+          font-size: 14px;
+          width: 178px;
+          overflow: hidden;
+          white-space: nowrap;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+        }
+       }
+       .msgs>li {
+         a {
+           color:#0000ff;
+         }
+       }
+     }
+  }
+  .middle {
+    width: 696px;
+    height: 500px;
+    background: white;
+    padding: 0 18px;
+    margin: 0 7px;
+    .banner {
+      width: 660px;
+      height: 280px;
+      background-color:burlywood;
+    }
+    .introduce{
+      padding: 18px 28px 8px 28px;
+      font-size: 15px;
+      font-weight: 400;
+      p {
+        margin-bottom: 30px;
+      }
+      a {
+        color:#000080;
+      }
+    }
+  }
+  .right {
+    width: 250px;
+    background: white;
+    min-height: 500px;
+    .button_box {
+      .button_item {
+        background: rgb(212, 212, 212);
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 7px;
+      }
+      .button_item:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .timelist {
+      padding: 8px 6px;
+      .msgs> li {
+        .font {
+          font-size: 14px;
+        }
+        .color{ 
+           font-size: 16px;
+           color: #000080;
+           font-weight: 600;
+        }
+      }
+    }
+    .school {
+      padding: 8px 6px;
+      text-align: center;
+      img {
+        width: 200px;
+        height: 100px;
+      }
+    }
+  }
+};

@@ -1,6 +1,8 @@
 import styles from './index.less';
 import Helmet from 'react-helmet';
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
+import Breakcrumbs from '../components/Breakcrumbs';
+import NavLink from 'umi/navlink';
 import { Menu } from 'antd';
 
 const { SubMenu, Item } = Menu;
@@ -11,96 +13,105 @@ function BasicLayout(props) {
   };
   const handleClick = e => {
     console.log('click ', e);
-    this.setState({
-      current: e.key,
-    });
+    // this.setState({
+    //   current: e.key,
+    // });
   };
+  console.log('dddd', props.location.pathname)
   return (
     <div className={styles.normal}>
       <Helmet>
         <title>第五届全国超快光谱研讨会</title>
         <link rel="icon" href={require('root/assets/favicon.ico')} />
       </Helmet>
-      <div className={styles.title} />
+      <div className={styles.banner} >
+        <img className={styles.title} src={require('root/assets/Banner/title.jpg')} alt="第五届全国超快光谱研讨会" />
+      </div>
       <Menu onClick={handleClick} className={styles.headernav} selectedKeys={[state.current]} theme="dark" mode="horizontal">
-          <Item key="index">
-            <a href="https://ant.design" >
-              首页
-            </a>
-          </Item>
-          <Item key="index1">
-            <a href="https://ant.design" >
-              组织机构
-            </a>
-          </Item>
-          <Item key="index2">
-            <a href="https://ant.design" >
-              会议日程
-            </a>
-          </Item>
-          <SubMenu
-            title={
-              <span className="submenu-title-wrapper">
-                会议报告
+        <Item key="index">
+          <NavLink to="/">
+            首页
+            </NavLink>
+        </Item>
+        <Item key="index1">
+          <NavLink to="/organization">
+            组织机构
+            </NavLink>
+        </Item>
+        <Item key="index2">
+          <NavLink to="/meeting">
+            会议日程
+            </NavLink>
+        </Item>
+        <SubMenu
+          title={
+            <span className="submenu-title-wrapper">
+              会议报告
               </span>
-            }
-          >
-            <Item title="Item 1">
+          }
+        >
+          <Item key="index31">
+            <NavLink to="/report/conference">
               大会报告
-            </Item>
-            <Item title="Item 2">
+            </NavLink>
+          </Item>
+          <Item key="index32">
+            <NavLink to="/report/invitation">
               邀请报告
-            </Item>
-            <Item title="Item 3">
+            </NavLink>
+          </Item>
+          <Item key="index33">
+            <NavLink to="/report/post">
               张贴报告
-            </Item>
-          </SubMenu>
-          <Item key="index4">
-            <a href="https://ant.design" >
-              会议主题
-            </a>
+            </NavLink>
           </Item>
-          <Item key="index5">
-            <a href="https://ant.design" >
-              期刊支持
-            </a>
-          </Item>
-          <SubMenu
-            title={
-              <span className="submenu-title-wrapper">
-                酒店交通
+        </SubMenu>
+        <Item key="index4">
+          <NavLink to="/theme">
+            会议主题
+            </NavLink>
+        </Item>
+        <SubMenu
+          title={
+            <span className="submenu-title-wrapper">
+              酒店交通
               </span>
-            }
-          >
-            <Item title="Item 5">
+          }
+        >
+          <Item key="index5">
+            <NavLink to="/info/hotel">
               酒店信息
-            </Item>
-            <Item title="Item 4">
+            </NavLink>
+          </Item>
+          <Item key="index51">
+            <NavLink to="/info/traffic">
               交通信息
-            </Item>
-          </SubMenu>
-          <Item key="index6">
-            <a href="https://ant.design">
-              历届会议
-            </a>
+            </NavLink>
           </Item>
-          <Item key="index7">
-            <a href="https://ant.design">
-              赞助信息
-            </a>
-          </Item>
-          <Item key="index8">
-            <a href="https://ant.design">
-              联系我们
-            </a>
-          </Item>
-          <Item key="alipay">
-            <a href="https://ant.design">
-              大会照片
-            </a>
-          </Item>
+        </SubMenu>
+        <Item key="index6">
+          <NavLink to="/previous">
+            历届会议
+            </NavLink>
+        </Item>
+        <Item key="index7">
+          <NavLink to="/sponsorship">
+            赞助信息
+            </NavLink>
+        </Item>
+        <Item key="index8">
+          <NavLink to="/contact">
+            联系我们
+            </NavLink>
+        </Item>
+        <Item key="index9">
+          <NavLink to="/photo">
+            大会照片
+            </NavLink>
+        </Item>
       </Menu>
       <div className={styles.content}>
+        <Breakcrumbs />
         {props.children}
       </div>
       <Footer />
