@@ -1,10 +1,11 @@
 
-import styles from './photo.css';
+// import styles from './photo.less';
+import ComBox from '../../components/ComBox'
 
-export default function() {
+export default function () {
   return (
-    <div className={styles.normal}>
+    <ComBox title="大会照片">
       <h1>Page photo</h1>
-    </div>
+    </ComBox>
   );
 }

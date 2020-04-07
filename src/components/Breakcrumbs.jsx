@@ -1,4 +1,5 @@
 import NavLink from 'umi/navlink';
+import styles from './styles/Breakcrumbs.less';
 import withBreadcrumbs from 'react-router-breadcrumbs-hoc';
 
 // 更多配置请移步 https://github.com/icd2k3/react-router-breadcrumbs-hoc
@@ -21,18 +22,22 @@ const routes = [
 ];
 
 export default withBreadcrumbs(routes)(({ breadcrumbs }) => (
-    <div>
-        {breadcrumbs.length > 1 ? breadcrumbs.map(({
-            match,
-            breadcrumb
-        }, index) => (
-                <span key={match.url}>
-                    <NavLink to={match.url}>
-                        {breadcrumb}
-                    </NavLink>
-                    {(index < breadcrumbs.length - 1) && <i> / </i>}
-                </span>
-            )) : null}
+    <div className={styles.wrap} >
+        {breadcrumbs.length > 1 ? <div>
+            <img src={require('../assets/V9_fz.png')} alt="面包屑" />
+            &nbsp;&nbsp;您当前的位置：
+        {breadcrumbs.map(({
+                match,
+                breadcrumb
+            }, index) => (
+                    <span key={match.url}>
+                        <NavLink to={match.url}>
+                            {breadcrumb}
+                        </NavLink>
+                        {(index < breadcrumbs.length - 1) && <i> > </i>}
+                    </span>
+                ))}
+        </div> : null}
     </div>
 ));
 

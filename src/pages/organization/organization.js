@@ -1,10 +1,10 @@
 
-import styles from './organization.css';
+// import styles from './organization.css';
+import ComBox from '../../components/ComBox'
 
-export default function() {
+export default function () {
   return (
-    <div className={styles.normal}>
-      <h1>Page organization</h1>
-    </div>
+    <ComBox title="组织机构">
+    </ComBox>
   );
 }

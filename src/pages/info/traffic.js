@@ -1,10 +1,10 @@
 
-import styles from './traffic.css';
+// import styles from './traffic.css';
+import ComBox from '../../components/ComBox'
 
-export default function() {
+export default function () {
   return (
-    <div className={styles.normal}>
-      <h1>Page traffic</h1>
-    </div>
+    <ComBox title="交通信息">
+    </ComBox>
   );
 }

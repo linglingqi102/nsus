@@ -1,10 +1,10 @@
 
-import styles from './post.css';
+// import styles from './post.css';
+import ComBox from '../../components/ComBox'
 
-export default function() {
+export default function () {
   return (
-    <div className={styles.normal}>
-      <h1>Page post</h1>
-    </div>
+    <ComBox title="张贴报告">
+    </ComBox>
   );
 }

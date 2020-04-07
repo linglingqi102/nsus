@@ -1,10 +1,10 @@
 
-import styles from './meeting.css';
+// import styles from './meeting.css';
+import ComBox from '../../components/ComBox'
 
-export default function() {
+export default function () {
   return (
-    <div className={styles.normal}>
-      <h1>Page meeting</h1>
-    </div>
+    <ComBox title="会议日程">
+    </ComBox>
   );
 }

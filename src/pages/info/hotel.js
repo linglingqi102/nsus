@@ -1,10 +1,10 @@
 
-import styles from './hotel.css';
+// import styles from './hotel.css';
+import ComBox from '../../components/ComBox'
 
-export default function() {
+export default function () {
   return (
-    <div className={styles.normal}>
-      <h1>Page hotel</h1>
-    </div>
+    <ComBox title="酒店信息">
+    </ComBox>
   );
 }

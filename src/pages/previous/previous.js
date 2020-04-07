@@ -1,10 +1,10 @@
 
-import styles from './previous.css';
+// import styles from './previous.css';
+import ComBox from '../../components/ComBox'
 
-export default function() {
+export default function () {
   return (
-    <div className={styles.normal}>
-      <h1>Page previous</h1>
-    </div>
+    <ComBox title="历届会议">
+    </ComBox>
   );
 }

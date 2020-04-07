@@ -1,10 +1,10 @@
 
-import styles from './contact.css';
+// import styles from './contact.css';
+import ComBox from '../../components/ComBox'
 
-export default function() {
+export default function () {
   return (
-    <div className={styles.normal}>
-      <h1>Page contact</h1>
-    </div>
+    <ComBox title="联系我们">
+    </ComBox>
   );
 }

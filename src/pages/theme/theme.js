@@ -1,10 +1,10 @@
 
-import styles from './theme.css';
+// import styles from './theme.css';
+import ComBox from '../../components/ComBox'
 
-export default function() {
+export default function () {
   return (
-    <div className={styles.normal}>
-      <h1>Page theme</h1>
-    </div>
+    <ComBox title="会议主题">
+    </ComBox>
   );
 }

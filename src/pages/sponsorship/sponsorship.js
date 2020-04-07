@@ -1,10 +1,10 @@
 
-import styles from './sponsorship.css';
+// import styles from './sponsorship.css';
+import ComBox from '../../components/ComBox'
 
-export default function() {
+export default function () {
   return (
-    <div className={styles.normal}>
-      <h1>Page sponsorship</h1>
-    </div>
+    <ComBox title="赞助信息">
+    </ComBox>
   );
 }
