@@ -45,7 +45,7 @@ export default function () {
             由华东师范大学精密光谱科学与技术国家重点实验室承办的“第四届全国超快光谱研讨会”，
             预定于 2018年7月15-18日期间在上海市召开。
           </p>
-          <div><a>点击此处查看会议日程</a></div>
+          <div><a href="/">点击此处查看会议日程</a></div>
         </div>
       </div>
       <div className={styles.right}>
