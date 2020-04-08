@@ -13,7 +13,7 @@ export default function () {
         </div>
       </div>
       <div>
-        <div className={styles.sub_title}><h4>会议官方邮箱：</h4></div>
+        <div className={styles.sub_title}><h4>会议官方邮箱ssss：</h4></div>
         <div className={styles.sub_content}>
           <p>nsus2020@sdu.edu.cn</p>
         </div>
