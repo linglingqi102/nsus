@@ -5,9 +5,9 @@ import ComBox from '../../components/ComBox'
 export default function () {
   return (
     <ComBox title="会议日程">
-      <div className = {styles.news}>
-        <p className = {styles.titlename}><strong>会议总体日程</strong></p>
-        <table className = {styles.table} align="center" border="1" cellPadding="1" cellSpacing="1 ">
+      <div className={styles.news}>
+        <p className={styles.titlename}><strong>会议总体日程</strong></p>
+        <table className={styles.table} align="center" border="1" cellPadding="1" cellSpacing="1 ">
           <tbody>
             <tr>
               <td rowSpan="2">7月31日</td>
@@ -30,7 +30,7 @@ export default function () {
           </tbody>
         </table>
         <p>
-          <a href="#" target="_blank">
+          <a href="/meeting" target="_blank">
             <span>点击此处查看会议日程</span>
           </a>
         </p>
