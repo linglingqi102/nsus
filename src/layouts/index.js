@@ -84,11 +84,6 @@ function BasicLayout(props) {
             历届会议
             </NavLink>
         </Item>
-        <Item key="/sponsorship">
-          <NavLink to="/sponsorship">
-            赞助信息
-            </NavLink>
-        </Item>
         <Item key="/contact">
           <NavLink to="/contact">
             联系我们

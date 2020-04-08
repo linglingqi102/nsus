@@ -46,10 +46,6 @@ export default {
           component: './previous/previous',
         },
         {
-          path: '/sponsorship',
-          component: './sponsorship/sponsorship',
-        },
-        {
           path: '/contact',
           component: './contact/contact',
         },

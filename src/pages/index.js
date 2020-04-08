@@ -27,12 +27,6 @@ export default function () {
             </li>
           </ul>
         </div>
-        <TitleBox title="赞助方案" url="/" />
-        <div className={styles.llist}>
-          <ul className={styles.news}>
-            <li><NavLink to="/">NSUS 2020 赞助方案</NavLink></li>
-          </ul>
-        </div>
       </div>
 
       <div className={styles.middle}>
@@ -75,18 +69,6 @@ export default function () {
               <p className={styles.color}>2020年7月10日</p>
             </li>
           </ul>
-        </div>
-        <TitleBox title="承办单位" url="/" />
-        <div className={styles.school}>
-          <div>
-            <a href="http://www.lps.ecnu.edu.cn/" target="_blank" rel="noopener noreferrer">
-              <img src={require('root/assets/lps.jpg')} alt="lps" />
-            </a>
-          </div>
-          <div><strong>华东师范大学</strong></div>
-          <div><strong>精密光谱科学与技术国家重点实验室</strong></div>
-          <div><strong>State Key Laboratory of Precision Spectroscopy</strong></div>
-          <div><strong>East China Normal University</strong></div>
         </div>
       </div>
     </div >
