@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styles from './index.less';
 import Helmet from 'react-helmet';
 import Footer from '../components/Footer';
@@ -8,14 +9,9 @@ import { Menu } from 'antd';
 const { SubMenu, Item } = Menu;
 
 function BasicLayout(props) {
-  const state = {
-    current: 'mail',
-  };
+  const [current, setCurrent] = useState('index')
   const handleClick = e => {
-    console.log('click ', e);
-    // this.setState({
-    //   current: e.key,
-    // });
+    setCurrent(e.key)
   };
   console.log('dddd', props.location.pathname)
   return (
@@ -27,7 +23,7 @@ function BasicLayout(props) {
       <div className={styles.banner} >
         <img className={styles.title} src={require('root/assets/Banner/title.jpg')} alt="第五届全国超快光谱研讨会" />
       </div>
-      <Menu onClick={handleClick} className={styles.headernav} selectedKeys={[state.current]} theme="dark" mode="horizontal">
+      <Menu onClick={handleClick} className={styles.headernav} selectedKeys={[current]} theme="dark" mode="horizontal">
         <Item key="index">
           <NavLink to="/">
             首页
@@ -78,12 +74,12 @@ function BasicLayout(props) {
               </span>
           }
         >
-          <Item key="index5">
+          <Item key="index51">
             <NavLink to="/info/hotel">
               酒店信息
             </NavLink>
           </Item>
-          <Item key="index51">
+          <Item key="index52">
             <NavLink to="/info/traffic">
               交通信息
             </NavLink>
