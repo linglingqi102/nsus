@@ -13,7 +13,6 @@ function BasicLayout(props) {
   const handleClick = e => {
     setCurrent(e.key)
   };
-  console.log('dddd', props.location.pathname)
   return (
     <div className={styles.normal}>
       <Helmet>
