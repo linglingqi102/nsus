@@ -76,8 +76,8 @@ export default {
   chainWebpack(config, { webpack }) {
     // 设置 alias
     config.resolve.alias.set('root', root);
-    config.output.set('filename', '[name].[hash].js');
-    config.output.set('chunkFilename', '[name].[chunkhash].js');
+    // config.output.set('filename', '[name].[hash].js');
+    // config.output.set('chunkFilename', '[name].[chunkhash].js');
   },
 
   plugins: [

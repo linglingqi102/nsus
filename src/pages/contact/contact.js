@@ -7,7 +7,7 @@ export default function () {
     <ComBox title="联系我们">
       <p className={styles.title}><strong>赞助商</strong></p>
       <div>
-        <div className={styles.sub_title}><h4>会议联系人ssss：</h4></div>
+        <div className={styles.sub_title}><h4>会议联系人：</h4></div>
         <div className={styles.sub_content}>
           <p>稍后更新...</p>
         </div>
