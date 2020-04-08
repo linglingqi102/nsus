@@ -41,9 +41,14 @@ export default function () {
         <TitleBox title="会议简介" />
         <div className={styles.introduce}>
           <p>
-            为促进国内超快光谱学研究的发展以及本领域科研人员之间的合作与交流，
-            由华东师范大学精密光谱科学与技术国家重点实验室承办的“第四届全国超快光谱研讨会”，
-            预定于 2018年7月15-18日期间在上海市召开。
+            随着国内超快光谱学研究的蓬勃发展，为进一步促进本领域科研人员之间的合作与交流，
+            由山东大学分子科学与工程研究院承办、中国科学院大连化学物理研究所分子反应动力学国家重
+            点实验室协办的“第五届全国超快光谱研讨会”，预定于2020年7月31日-8月3日期间在山东青岛召开。
+          </p>
+          <p>
+            山东大学是具有悠久历史的著名高校，山东大学青岛校区位于崂山脚下、鳌山湾畔，
+            地处青岛市“蓝色硅谷”核心区，热忱欢迎各位同仁莅临“第五届全国超快光谱研讨会”，
+            也热忱欢迎国内外各厂商赞助会议并展示产品。相约岛城，共创未来！
           </p>
           <div><a href="/">点击此处查看会议日程</a></div>
         </div>
@@ -59,11 +64,11 @@ export default function () {
           <ul className={styles.msgs}>
             <li>
               <div className={styles.font}>摘要投稿截止日期</div>
-              <p className={styles.color}>2018年6月10日</p>
+              <p className={styles.color}>2020年6月10日</p>
               <div className={styles.font}>优惠注册截止日期</div>
-              <p className={styles.color}>2018年6月10日</p>
+              <p className={styles.color}>2020年6月10日</p>
               <div className={styles.font}>在线缴费截止日期</div>
-              <p className={styles.color}>2018年7月10日</p>
+              <p className={styles.color}>2020年7月10日</p>
             </li>
           </ul>
         </div>
