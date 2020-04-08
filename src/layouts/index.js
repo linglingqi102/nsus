@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import styles from './index.less';
 import Helmet from 'react-helmet';
 import Footer from '../components/Footer';
@@ -9,10 +8,6 @@ import { Menu } from 'antd';
 const { SubMenu, Item } = Menu;
 
 function BasicLayout(props) {
-  const [current, setCurrent] = useState('index')
-  const handleClick = e => {
-    setCurrent(e.key)
-  };
   return (
     <div className={styles.normal}>
       <Helmet>
@@ -22,18 +17,18 @@ function BasicLayout(props) {
       <div className={styles.banner} >
         <img className={styles.title} src={require('root/assets/Banner/title.jpg')} alt="第五届全国超快光谱研讨会" />
       </div>
-      <Menu onClick={handleClick} className={styles.headernav} selectedKeys={[current]} theme="dark" mode="horizontal">
-        <Item key="index">
+      <Menu className={styles.headernav} selectedKeys={[props.location.pathname]} theme="dark" mode="horizontal">
+        <Item key="/">
           <NavLink to="/">
             首页
             </NavLink>
         </Item>
-        <Item key="index1">
+        <Item key="/organization">
           <NavLink to="/organization">
             组织机构
             </NavLink>
         </Item>
-        <Item key="index2">
+        <Item key="/meeting">
           <NavLink to="/meeting">
             会议日程
             </NavLink>
@@ -45,23 +40,23 @@ function BasicLayout(props) {
               </span>
           }
         >
-          <Item key="index31">
+          <Item key="/report/conference">
             <NavLink to="/report/conference">
               大会报告
             </NavLink>
           </Item>
-          <Item key="index32">
+          <Item key="/report/invitation">
             <NavLink to="/report/invitation">
               邀请报告
             </NavLink>
           </Item>
-          <Item key="index33">
+          <Item key="/report/post">
             <NavLink to="/report/post">
               张贴报告
             </NavLink>
           </Item>
         </SubMenu>
-        <Item key="index4">
+        <Item key="/theme">
           <NavLink to="/theme">
             会议主题
             </NavLink>
@@ -73,33 +68,33 @@ function BasicLayout(props) {
               </span>
           }
         >
-          <Item key="index51">
+          <Item key="/info/hotel">
             <NavLink to="/info/hotel">
               酒店信息
             </NavLink>
           </Item>
-          <Item key="index52">
+          <Item key="/info/traffic">
             <NavLink to="/info/traffic">
               交通信息
             </NavLink>
           </Item>
         </SubMenu>
-        <Item key="index6">
+        <Item key="/previous">
           <NavLink to="/previous">
             历届会议
             </NavLink>
         </Item>
-        <Item key="index7">
+        <Item key="/sponsorship">
           <NavLink to="/sponsorship">
             赞助信息
             </NavLink>
         </Item>
-        <Item key="index8">
+        <Item key="/contact">
           <NavLink to="/contact">
             联系我们
             </NavLink>
         </Item>
-        <Item key="index9">
+        <Item key="/photo">
           <NavLink to="/photo">
             大会照片
             </NavLink>

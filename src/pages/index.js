@@ -56,8 +56,12 @@ export default function () {
       <div className={styles.right}>
         <div className={styles.button_box}>
           <div className={styles.button_item}>参会投稿</div>
-          <div className={styles.button_item}>参会注册</div>
-          <div className={styles.button_item}>酒店</div>
+          <div className={[styles.button_item, styles.active].join(' ')}>
+            <a href="https://www.wjx.top/jq/63301164.aspx" alt="参会注册" target="_blank" rel="noopener noreferrer">参会注册</a>
+          </div>
+          <div className={[styles.button_item, styles.active].join(' ')}>
+            <NavLink to="/info/hotel">酒店</NavLink>
+          </div>
         </div>
         <TitleBox title="重要日期" url="/" />
         <div className={styles.timelist}>
@@ -85,6 +89,6 @@ export default function () {
           <div><strong>East China Normal University</strong></div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }

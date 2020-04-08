@@ -67,7 +67,7 @@
     background: white;
     min-height: 500px;
     .button_box {
-      .button_item {
+      .button_item, .active {
         background: rgb(212, 212, 212);
         height: 38px;
         line-height: 38px;
@@ -77,8 +77,17 @@
         width: 100%;
         margin-bottom: 7px;
       }
-      .button_item:last-child {
+      .button_item:last-child, .active:last-child {
         margin-bottom: 0;
+      }
+      .active {
+        a{
+          color: white;
+        }
+        background: #c30d23;
+      }
+      .active:hover {
+        background: #ef8200;
       }
     }
     .timelist {
