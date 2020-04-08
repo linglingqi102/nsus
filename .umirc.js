@@ -46,10 +46,6 @@ export default {
           component: './previous/previous',
         },
         {
-          path: '/sponsorship',
-          component: './sponsorship/sponsorship',
-        },
-        {
           path: '/contact',
           component: './contact/contact',
         },
@@ -76,6 +72,8 @@ export default {
   chainWebpack(config, { webpack }) {
     // 设置 alias
     config.resolve.alias.set('root', root);
+    config.output.set('filename', '[name].[hash].js');
+    config.output.set('chunkFilename', '[name].[chunkhash].js');
   },
 
   plugins: [
@@ -85,10 +83,11 @@ export default {
       {
         antd: true,
         dva: true,
+        library: 'react',
         dynamicImport: {
           webpackChunkName: true,
         },
-        title: 'nsus',
+        title: '第五届全国超快光谱研讨会',
         dll: false,
         routes: {
           exclude: [
