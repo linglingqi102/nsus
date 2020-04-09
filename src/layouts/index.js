@@ -50,11 +50,6 @@ function BasicLayout(props) {
               邀请报告
             </NavLink>
           </Item>
-          <Item key="/report/post">
-            <NavLink to="/report/post">
-              张贴报告
-            </NavLink>
-          </Item>
         </SubMenu>
         <Item key="/theme">
           <NavLink to="/theme">
@@ -82,6 +77,16 @@ function BasicLayout(props) {
         <Item key="/previous">
           <NavLink to="/previous">
             历届会议
+            </NavLink>
+        </Item>
+        <Item key="/payinfo">
+          <NavLink to="/payinfo">
+            缴费信息
+            </NavLink>
+        </Item>
+        <Item key="/message">
+          <NavLink to="/message">
+            会议通知
             </NavLink>
         </Item>
         <Item key="/contact">

@@ -62,6 +62,14 @@ export default {
           component: './info/traffic',
         },
         {
+          path: '/payinfo',
+          component: './payinfo/payinfo',
+        },
+        {
+          path: '/message',
+          component: './message/message',
+        },
+        {
           path: '/',
           component: '../pages/index',
         },

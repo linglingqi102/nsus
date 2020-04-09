@@ -10,22 +10,22 @@ export default function () {
         <table className={styles.table} align="center" border="1" cellPadding="1" cellSpacing="1 ">
           <tbody>
             <tr>
-              <td rowSpan="2">7月31日</td>
-              <td>12:00 - 22:00</td>
+              <td rowSpan="2">8月1日-3日</td>
+              <td>8:00 - 22:00</td>
               <td>报到</td>
             </tr>
             <tr>
-              <td>12:00 - 22:00</td>
-              <td>全天注册</td>
-            </tr>
-            <tr>
-              <td rowSpan="2">7月15日</td>
-              <td>12:00 - 22:00</td>
-              <td>报到</td>
-            </tr>
-            <tr>
-              <td>12:00 - 22:00</td>
+              <td>8:00 - 22:00</td>
               <td>会议报告及海报展示</td>
+            </tr>
+            <tr>
+              <td rowSpan="2">7月31日</td>
+              <td>8:00 - 22:00</td>
+              <td>报到</td>
+            </tr>
+            <tr>
+              <td>8:00 - 22:00</td>
+              <td>全天注册</td>
             </tr>
           </tbody>
         </table>
