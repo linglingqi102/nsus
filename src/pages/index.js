@@ -9,11 +9,11 @@ export default function () {
         <TitleBox title="NSUS 2020" url="/" />
         <div className={styles.llist}>
           <ul className={styles.news}>
-            <li><NavLink to="/">大会照片</NavLink></li>
-            <li><NavLink to="/">组织机构</NavLink></li>
-            <li><NavLink to="/">期刊支持</NavLink></li>
-            <li><NavLink to="/">历届会议</NavLink></li>
-            <li><NavLink to="/">联系我们</NavLink></li>
+            <li><NavLink to="/photo">大会照片</NavLink></li>
+            <li><NavLink to="/organization">组织机构</NavLink></li>
+            <li><NavLink to="/theme">会议主题</NavLink></li>
+            <li><NavLink to="/previous">历届会议</NavLink></li>
+            <li><NavLink to="/contact">联系我们</NavLink></li>
           </ul>
         </div>
         <TitleBox title="会议通知" url="/" />
