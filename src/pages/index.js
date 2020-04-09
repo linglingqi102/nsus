@@ -2,6 +2,7 @@
 import styles from './index.less';
 import NavLink from 'umi/navlink';
 import TitleBox from '../components/TitleBox';
+import { Button } from 'antd';
 export default function () {
   return (
     <div className={styles.normal}>
@@ -49,13 +50,15 @@ export default function () {
       </div>
       <div className={styles.right}>
         <div className={styles.button_box}>
-          <div className={styles.button_item}>参会投稿</div>
-          <div className={[styles.button_item, styles.active].join(' ')}>
+          <Button type="primary" size="large" className={styles.button_item} disabled>
+            <NavLink to="/info/hotel">参会投稿</NavLink>
+          </Button>
+          <Button type="primary" size="large" className={styles.button_item}>
             <a href="https://www.wjx.top/jq/63301164.aspx" alt="参会注册" target="_blank" rel="noopener noreferrer">参会注册</a>
-          </div>
-          <div className={[styles.button_item, styles.active].join(' ')}>
+          </Button>
+          <Button type="primary" size="large" className={styles.button_item}>
             <NavLink to="/info/hotel">酒店</NavLink>
-          </div>
+          </Button>
         </div>
         <TitleBox title="重要日期" url="/" />
         <div className={styles.timelist}>

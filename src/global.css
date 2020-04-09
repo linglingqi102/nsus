@@ -22,7 +22,3 @@ body {
 .ant-menu-horizontal {
   line-height: 35px!important; 
 }
-.ant-menu.ant-menu-dark .ant-menu-item-selected, 
-.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
-  background-color: #b8030f !important;
-}
