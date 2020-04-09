@@ -2,6 +2,7 @@
 import styles from './index.less';
 import NavLink from 'umi/navlink';
 import TitleBox from '../components/TitleBox';
+import { Carousel } from 'antd';
 import { Button } from 'antd';
 export default function () {
   return (
@@ -32,6 +33,11 @@ export default function () {
 
       <div className={styles.middle}>
         <div className={styles.banner}>
+          <Carousel autoplay effect="fade">
+            <img src={require('root/assets/lunbo1.jpg')} alt="山东大学" />
+            <img src={require('root/assets/lunbo2.jpg')} alt="山东大学" />
+            <img src={require('root/assets/lunbo3.jpg')} alt="山东大学" />
+          </Carousel>
         </div>
         <TitleBox title="会议简介" />
         <div className={styles.introduce}>
