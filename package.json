@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "umi dev",
     "start": "umi build && NODE_ENV=production node server/server.js",
-    "build": "umi build",
+    "build": "NODE_ENV=production && umi build",
     "deploy": "sh deploy.sh",
     "test": "umi test",
     "lint": "eslint {src,mock,tests}/**/*.{js,jsx} --fix",
