@@ -15,7 +15,7 @@ function BasicLayout(props) {
         <link rel="icon" href={require('root/assets/favicon.ico')} />
       </Helmet>
       <div className={styles.banner} >
-        <img className={styles.title} src="http://nsus-static.oss-cn-beijing.aliyuncs.com/banner.jpg" alt="第五届全国超快光谱研讨会" />
+        <img className={styles.title} src={require('root/assets/banner.jpg')} alt="第五届全国超快光谱研讨会" />
       </div>
       <Menu className={styles.headernav} selectedKeys={[props.location.pathname]} theme="dark" mode="horizontal">
         <Item key="/">
