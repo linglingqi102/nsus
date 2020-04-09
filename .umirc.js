@@ -1,12 +1,12 @@
 // ref: https://umijs.org/config/
 const { join } = require('path');
-const env = require('./env-config');
+const isDev = process.env.NODE_ENV === 'development';
 const root = join(__dirname, 'src');
 export default {
   treeShaking: true,
   ssr: true,
   hash: true,
-  define: env,
+  publicPath: isDev ? '/dist/' : 'http://nsus-assets.oss-cn-beijing.aliyuncs.com/dist/',
   targets: {
     ie: 9,
   },

@@ -1,5 +1,5 @@
 require('regenerator-runtime/runtime');
-// require('../env-config');
+require('../env-config');
 const server = require('umi-server');
 const Koa = require('koa');
 const compress = require('koa-compress');
@@ -70,7 +70,7 @@ app.use(async (ctx, next) => {
   }
 });
 
-app.use(staticServe(root,{'maxage': 300000}));
+app.use(staticServe(root, { 'maxage': 300000 }));
 
 if (!process.env.NOW_ZEIT_ENV) {
   app.listen(80);

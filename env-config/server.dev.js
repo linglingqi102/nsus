@@ -1,4 +1,5 @@
 module.exports = Object.assign(process.env, {
-  ASSET_PREFIX: 'https://cdn-global1.unicareer.com/overseasWebsite',
+  ASSET_PATH: 'http://nsus-assets.oss-cn-beijing.aliyuncs.com/dist',
+  ASSET_PREFIX: '',
   ASSET_PREFIX_SCRIPT: '',
 });
