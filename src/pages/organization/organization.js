@@ -68,14 +68,17 @@ export default function () {
               <td>韩克利</td>
               <td>邓伟侨</td>
               <td>周潘旺</td>
+              <td>李鹏</td>
               <td>楼张蓉</td>
               <td>郑道元</td>
+              <td>张瑞玲</td>
               <td>张洁</td>
             </tr>
           </tbody>
         </table>
         <p className={styles.title}><strong>承办单位</strong></p>
-        <p>山东大学分子科学与工程研究院和中国科学院大连化学物理研究所分子反应动力学国家重点实验室</p>
+        <p className={styles.p_content}><img src={require('root/assets/shandong_icon.jpeg')} alt="山东大学分子科学与工程研究院和中国科学院大连化学物理研究所分子反应动力学国家重点实验室" /></p>
+        <p className={styles.p_content}>山东大学分子科学与工程研究院和中国科学院大连化学物理研究所分子反应动力学国家重点实验室</p>
       </div>
     </ComBox>
   );

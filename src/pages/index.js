@@ -34,9 +34,10 @@ export default function () {
       <div className={styles.middle}>
         <div className={styles.banner}>
           <Carousel autoplay effect="fade">
-            <img src={require('root/assets/lunbo1.jpg')} alt="山东大学" />
-            <img src={require('root/assets/lunbo2.jpg')} alt="山东大学" />
-            <img src={require('root/assets/lunbo3.jpg')} alt="山东大学" />
+            <img src={require('root/assets/zhanshi1.jpeg')} alt="山东大学" />
+            <img src={require('root/assets/zhanshi2.jpeg')} alt="山东大学" />
+            <img src={require('root/assets/zhanshi3.jpeg')} alt="山东大学" />
+            <img src={require('root/assets/zhanshi4.jpeg')} alt="山东大学" />
           </Carousel>
         </div>
         <TitleBox title="会议简介" />
