@@ -6,7 +6,7 @@ export default {
   treeShaking: true,
   ssr: true,
   hash: true,
-  publicPath: isDev ? '/dist/' : '/',
+  publicPath: isDev ? '/dist/' : 'http://nsus-assets.oss-cn-beijing.aliyuncs.com/',
   targets: {
     ie: 9,
   },
