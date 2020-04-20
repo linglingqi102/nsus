@@ -6,7 +6,7 @@ export default {
   treeShaking: true,
   ssr: true,
   hash: true,
-  publicPath: '/dist/',
+  publicPath: isDev ? '/dist/' : '/',
   targets: {
     ie: 9,
   },
