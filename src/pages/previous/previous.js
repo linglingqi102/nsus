@@ -7,6 +7,14 @@ export default function () {
     <ComBox title="历届会议">
       <p className={styles.title}><strong>会议主题</strong></p>
       <div className={styles.sub}>
+        <div className={styles.sub_title}><h4>第四届全国超快光谱研讨会</h4></div>
+        <div className={styles.sub_content}>
+          <p>时间：2018年7月15-18日</p>
+          <p>地点：上海</p>
+          <p>承办单位：华东师范大学精密光谱科学与技术国家重点实验室</p>
+        </div>
+      </div>
+      <div className={styles.sub}>
         <div className={styles.sub_title}><h4>第三届全国超快光谱研讨会</h4></div>
         <div className={styles.sub_content}>
           <p>时间：2016年8月19 - 21日</p>

@@ -8,7 +8,7 @@ export default function () {
   return (
     <div className={styles.normal}>
       <div className={styles.left}>
-        <TitleBox title="NSUS 2020" url="/" />
+        {/*<TitleBox title="NSUS 2020" url="/" />
         <div className={styles.llist}>
           <ul className={styles.news}>
             <li><NavLink to="/photo">大会照片</NavLink></li>
@@ -17,7 +17,7 @@ export default function () {
             <li><NavLink to="/previous">历届会议</NavLink></li>
             <li><NavLink to="/contact">联系我们</NavLink></li>
           </ul>
-        </div>
+        </div>*/}
         <TitleBox title="会议通知" url="/" />
         <div className={styles.llist}>
           <ul className={styles.msgs}>

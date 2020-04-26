@@ -10,7 +10,6 @@ export default function () {
         <p className={styles.title}><strong>会议主席</strong></p>
         <div className={styles.first}>
           <div className={styles.item_first}>
-            <img src={require('root/assets/lps.jpg')} alt="lps"></img>
             <p>韩克利</p>
           </div>
         </div>
