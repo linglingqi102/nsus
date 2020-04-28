@@ -29,6 +29,19 @@ export default function () {
             </li>
           </ul>
         </div>
+        <TitleBox title="重要日期" url="/" />
+        <div className={styles.timelist}>
+          <ul className={styles.msgs}>
+            <li>
+              <div className={styles.font}>摘要投稿截止日期</div>
+              <p className={styles.color}>2020年6月10日</p>
+              <div className={styles.font}>优惠注册截止日期</div>
+              <p className={styles.color}>2020年6月20日</p>
+              <div className={styles.font}>优惠缴费截止日期</div>
+              <p className={styles.color}>2020年7月10日</p>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div className={styles.middle}>
@@ -67,20 +80,7 @@ export default function () {
             <NavLink to="/info/hotel">酒店</NavLink>
           </Button>
         </div>
-        <TitleBox title="重要日期" url="/" />
-        <div className={styles.timelist}>
-          <ul className={styles.msgs}>
-            <li>
-              <div className={styles.font}>摘要投稿截止日期</div>
-              <p className={styles.color}>2020年6月10日</p>
-              <div className={styles.font}>优惠注册截止日期</div>
-              <p className={styles.color}>2020年6月10日</p>
-              <div className={styles.font}>在线缴费截止日期</div>
-              <p className={styles.color}>2020年7月10日</p>
-            </li>
-          </ul>
-        </div>
       </div>
-    </div >
+    </div>
   );
 }
