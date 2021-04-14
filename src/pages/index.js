@@ -29,16 +29,12 @@ export default function () {
             </li>
           </ul>
         </div>
-        <TitleBox title="重要日期" url="/" />
+        <TitleBox title="会议日程" />
         <div className={styles.timelist}>
           <ul className={styles.msgs}>
             <li>
-              <div className={styles.font}>摘要投稿截止日期</div>
-              <p className={styles.color}>2020年6月10日</p>
-              <div className={styles.font}>优惠注册截止日期</div>
-              <p className={styles.color}>2020年6月20日</p>
-              <div className={styles.font}>优惠缴费截止日期</div>
-              <p className={styles.color}>2020年7月10日</p>
+              <p className={styles.font}>2021年7月18日：全天注册</p>
+              <p className={styles.font}>2021年7月19日-21日：会议报告及海报展示</p>
             </li>
           </ul>
         </div>
@@ -65,20 +61,32 @@ export default function () {
             地处青岛市“蓝色硅谷”核心区，热忱欢迎各位同仁莅临“第五届全国超快光谱研讨会”，
             也热忱欢迎国内外各厂商赞助会议并展示产品。相约岛城，共创未来！
           </p>
-          <div><a href="/">点击此处查看会议日程</a></div>
         </div>
       </div>
       <div className={styles.right}>
         <div className={styles.button_box}>
-          <Button type="primary" size="large" className={styles.button_item} disabled>
-            <NavLink to="/info/hotel">参会投稿</NavLink>
-          </Button>
           <Button type="primary" size="large" className={styles.button_item}>
             <a href="https://www.wjx.top/jq/63301164.aspx" alt="参会注册" target="_blank" rel="noopener noreferrer">参会注册</a>
           </Button>
           <Button type="primary" size="large" className={styles.button_item}>
             <NavLink to="/info/hotel">酒店</NavLink>
           </Button>
+          <Button type="primary" size="large" className={styles.button_item}>
+            <NavLink to="/info/traffic">交通</NavLink>
+          </Button>
+        </div>
+        <TitleBox title="重要日期" url="/" />
+        <div className={styles.timelist}>
+          <ul className={styles.msgs}>
+            <li>
+              <div className={styles.font}>摘要投稿截止日期</div>
+              <p className={styles.color}>2021年6月10日</p>
+              <div className={styles.font}>优惠注册截止日期</div>
+              <p className={styles.color}>2021年6月20日</p>
+              <div className={styles.font}>优惠缴费截止日期</div>
+              <p className={styles.color}>2021年7月10日</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
