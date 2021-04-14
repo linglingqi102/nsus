@@ -8,18 +8,8 @@ export default function () {
   return (
     <div className={styles.normal}>
       <div className={styles.left}>
-        {/*<TitleBox title="NSUS 2020" url="/" />
-        <div className={styles.llist}>
-          <ul className={styles.news}>
-            <li><NavLink to="/photo">大会照片</NavLink></li>
-            <li><NavLink to="/organization">组织机构</NavLink></li>
-            <li><NavLink to="/theme">会议主题</NavLink></li>
-            <li><NavLink to="/previous">历届会议</NavLink></li>
-            <li><NavLink to="/contact">联系我们</NavLink></li>
-          </ul>
-        </div>*/}
-        <TitleBox title="会议通知" url="/" />
-        <div className={styles.llist}>
+        <TitleBox title="会议通知" />
+        <div className={styles.list}>
           <ul className={styles.msgs}>
             <li>
               <p><a href="http://www.htcis.net/CKUploads/files/2018/7/NSUS2018%e7%ac%ac%e4%b8%89%e8%bd%ae%e4%bc%9a%e8%ae%ae%e9%80%9a%e7%9f%a5-%e9%80%9a%e7%94%a8.pdf">第五届全国超快光谱研讨会会议通知-通用版</a></p>
@@ -30,10 +20,10 @@ export default function () {
           </ul>
         </div>
         <TitleBox title="会议日程" />
-        <div className={styles.timelist}>
+        <div className={styles.list}>
           <ul className={styles.msgs}>
             <li>
-              <p className={styles.font}>2021年7月18日：全天注册</p>
+              <p className={styles.font}>2021年7月18日：<div>全天注册</div></p>
               <p className={styles.font}>2021年7月19日-21日：会议报告及海报展示</p>
             </li>
           </ul>
@@ -43,10 +33,10 @@ export default function () {
       <div className={styles.middle}>
         <div className={styles.banner}>
           <Carousel autoplay effect="fade">
-            <img src={require('root/assets/zhanshi1.jpeg')} alt="山东大学" />
-            <img src={require('root/assets/zhanshi2.jpeg')} alt="山东大学" />
-            <img src={require('root/assets/zhanshi3.jpeg')} alt="山东大学" />
-            <img src={require('root/assets/zhanshi4.jpeg')} alt="山东大学" />
+            <img src={require('root/assets/banner_kk1.jpeg')} alt="山东大学" />
+            <img src={require('root/assets/banner_kk2.jpeg')} alt="山东大学" />
+            <img src={require('root/assets/banner_kk3.jpeg')} alt="山东大学" />
+            <img src={require('root/assets/banner_kk4.jpeg')} alt="山东大学" />
           </Carousel>
         </div>
         <TitleBox title="会议简介" />
@@ -75,9 +65,9 @@ export default function () {
             <NavLink to="/info/traffic">交通</NavLink>
           </Button>
         </div>
-        <TitleBox title="重要日期" url="/" />
-        <div className={styles.timelist}>
-          <ul className={styles.msgs}>
+        <TitleBox title="重要日期" />
+        <div className={styles.list}>
+          <ul className={styles.time_list}>
             <li>
               <div className={styles.font}>摘要投稿截止日期</div>
               <p className={styles.color}>2021年6月10日</p>

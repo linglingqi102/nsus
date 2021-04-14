@@ -3,25 +3,32 @@
   /* font-family: Georgia, sans-serif; */
   padding: 15px 20px;
   display: flex;
+  .font {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .time_list {
+    padding: 10px;
+    ul {
+      list-style-type: none;
+    }
+    .msgs> li {
+      .color{ 
+         font-size: 16px;
+         color: #000080;
+         font-weight: 600;
+      }
+    }
+   }
   .left {
      width: 200px;
      background: white;
      min-height: 500px;
-     .timelist {
-      padding: 8px 6px;
-      .msgs> li {
-        .font {
-          font-size: 14px;
-        }
-        .color{ 
-           font-size: 16px;
-           color: #000080;
-           font-weight: 600;
-        }
-      }
-     }
-     .llist {
+     .list {
        padding: 8px 8px;
+       ul {
+        list-style-type: none;
+       }
        .news> li{
         display: block;
         background: url('../assets/line_01.png') bottom no-repeat;
@@ -81,6 +88,9 @@
     width: 250px;
     background: white;
     min-height: 500px;
+    ul {
+      list-style-type: none;
+     }
     .button_box {
       .button_item {
         height: 38px;

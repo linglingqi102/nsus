@@ -3,21 +3,19 @@ body,
 #root {
   height: 100%;
 }
+
 body {
-  font-family: "Microsoft YaHei",Arial,Tahoma;
+  font-family: "思源黑体Regular";
   color: #2C3245;
 }
 ul, ol, li {
-  list-style-type: none;
+  /* list-style-type: none; */
   padding: 0;
   margin: 0;
 }
 
 body {
   margin: 0;
-}
-.ant-menu-dark {
-  background: rgb(76, 73, 72) !important;
 }
 .ant-menu-horizontal {
   line-height: 35px!important; 
