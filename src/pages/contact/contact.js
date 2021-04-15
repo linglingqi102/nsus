@@ -21,10 +21,9 @@ export default function () {
       <div className={styles.sub}>
         <div className={styles.sub_title}><h4>会议邮箱：</h4></div>
         <div className={styles.sub_content}>
-          <a>nsus2021@sdu.edu.cn</a>
+          <a href="/">nsus2021@sdu.edu.cn</a>
         </div>
       </div>
-     
     </ComBox>
   );
 }

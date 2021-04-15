@@ -1,5 +1,6 @@
 // ref: https://umijs.org/config/
 const { join } = require('path');
+
 const isDev = process.env.NODE_ENV === 'development';
 const root = join(__dirname, 'src');
 export default {
@@ -11,7 +12,7 @@ export default {
     ie: 9,
   },
   autoprefixer: {
-    flexbox: true
+    flexbox: true,
   },
   routes: [
     {
@@ -25,14 +26,6 @@ export default {
         {
           path: '/meeting',
           component: './meeting/meeting',
-        },
-        {
-          path: '/report/conference',
-          component: './report/conference',
-        },
-        {
-          path: '/report/invitation',
-          component: './report/invitation',
         },
         {
           path: '/report/post',
@@ -73,6 +66,14 @@ export default {
         {
           path: '/message',
           component: './message/message',
+        },
+        {
+          path: '/conference',
+          component: './conference/conference',
+        },
+        {
+          path: '/invitation',
+          component: './invitation/invitation',
         },
         {
           path: '/',
