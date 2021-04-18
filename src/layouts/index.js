@@ -15,15 +15,9 @@ function BasicLayout(props) {
       </Helmet>
       <figure className={styles.banner}>
         <div className={styles.introduce}>
-          <p>第五届全国超快光谱研讨会</p>
-          <p>2021.07.18-07.21</p>
-          <p>山东 青岛</p>
+          <div className={styles.title}>第五届全国超快光谱研讨会</div>
+          <div className={styles.time}>2021.07.18-07.21 山东 青岛</div>
         </div>
-        <img
-          className={styles.title}
-          src={require('root/assets/banner.jpg')}
-          alt="第五届全国超快光谱研讨会"
-        />
       </figure>
       <Menu
         className={styles.headernav}

@@ -14,7 +14,6 @@ const TitleBox = props => {
             </div>
             <div className={styles.line}>
                 <span className={styles.c1}></span>
-                <span className={styles.c2}></span>
             </div>
         </div>
     );

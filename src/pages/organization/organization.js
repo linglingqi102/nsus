@@ -16,7 +16,7 @@ export default function () {
         <p className={styles.title}><strong>大会主席</strong></p>
         <div className={styles.first}>
           <div className={styles.item_first}>
-            <p>张东辉、韩克利</p>
+            <p>韩克利、翁羽翔、张东辉</p>
           </div>
         </div>
         <p className={styles.title}><strong>会议学术顾问</strong></p>
@@ -75,13 +75,11 @@ export default function () {
               <td>周潘旺</td>
               <td>楼张蓉</td>
               <td>郑道元</td>
+              <td>张瑞玲</td>
               <td>张洁</td>
             </tr>
           </tbody>
         </table>
-        <p className={styles.title}><strong>承办单位</strong></p>
-        <p className={styles.p_content}><img src={require('root/assets/shandong_icon.jpeg')} alt="山东大学前沿交叉科学青岛研究院-分子科学与工程研究院" /></p>
-        <p className={styles.p_content}>山东大学前沿交叉科学青岛研究院-分子科学与工程研究院</p>
       </div>
     </ComBox>
   );

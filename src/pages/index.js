@@ -8,25 +8,21 @@ export default function () {
   return (
     <div className={styles.normal}>
       <div className={styles.left}>
-        <TitleBox title="会议通知" />
+        <TitleBox title="会议资讯" />
         <div className={styles.list}>
           <ul className={styles.msgs}>
             <li>
-              <p><a href="http://www.htcis.net/CKUploads/files/2018/7/NSUS2018%e7%ac%ac%e4%b8%89%e8%bd%ae%e4%bc%9a%e8%ae%ae%e9%80%9a%e7%9f%a5-%e9%80%9a%e7%94%a8.pdf">第五届全国超快光谱研讨会会议通知-通用版</a></p>
-              <p><a href="http://www.htcis.net/CKUploads/files/2018/7/NSUS2018%e7%ac%ac%e4%b8%89%e8%bd%ae%e4%bc%9a%e8%ae%ae%e9%80%9a%e7%9f%a5-%e9%80%9a%e7%94%a8.pdf">第五届全国超快光谱研讨会第一轮通知</a></p>
-              <p><a href="http://www.htcis.net/CKUploads/files/2018/7/NSUS2018%e7%ac%ac%e4%b8%89%e8%bd%ae%e4%bc%9a%e8%ae%ae%e9%80%9a%e7%9f%a5-%e9%80%9a%e7%94%a8.pdf">第五届全国超快光谱研讨会第一轮通知</a></p>
-              <p><a href="http://www.htcis.net/CKUploads/files/2018/7/NSUS2018%e7%ac%ac%e4%b8%89%e8%bd%ae%e4%bc%9a%e8%ae%ae%e9%80%9a%e7%9f%a5-%e9%80%9a%e7%94%a8.pdf">第五届全国超快光谱研讨会第三轮通知-参会注意事项</a></p>
+              <p><a href="/">会议通知（第一轮）</a></p>
+              <p><a href="/">会议通知（第二轮）</a></p>
             </li>
           </ul>
         </div>
-        <TitleBox title="会议日程" />
-        <div className={styles.list}>
-          <ul className={styles.msgs}>
-            <li>
-              <p className={styles.font}>2021年7月18日：<div>全天注册</div></p>
-              <p className={styles.font}>2021年7月19日-21日：会议报告及海报展示</p>
-            </li>
-          </ul>
+        <TitleBox title="承办单位" />
+        <div className={styles.address}>
+          <img src="http://nsus-static.oss-cn-beijing.aliyuncs.com/%E9%99%A2%E5%BE%BD.png" alt="" />
+          <div>山东大学</div>
+          <div>前沿交叉科学青岛研究院</div>
+          <div>分子科学与工程研究院</div>
         </div>
       </div>
 
@@ -42,14 +38,14 @@ export default function () {
         <TitleBox title="会议简介" />
         <div className={styles.introduce}>
           <p>
-            随着国内超快光谱学研究的蓬勃发展，为进一步促进本领域科研人员之间的合作与交流，
-            由山东大学分子科学与工程研究院承办、中国科学院大连化学物理研究所分子反应动力学国家重
-            点实验室协办的“第五届全国超快光谱研讨会”，预定于2020年7月31日-8月3日期间在山东青岛召开。
+            随着国内超快光谱学研究的蓬勃发展，为进一步促进本领域科研人员之间的合作与交流，由山东大学前
+            沿交叉科学青岛研究院-分子科学与工程研究院承办、中国科学院大连化学物理研究所分子反应动力学国家
+            重点实验室协办的“第五届全国超快光谱研讨会”，拟定于2021年7月18日至21日在山东青岛举行。
           </p>
           <p>
-            山东大学是具有悠久历史的著名高校，山东大学青岛校区位于崂山脚下、鳌山湾畔，
-            地处青岛市“蓝色硅谷”核心区，热忱欢迎各位同仁莅临“第五届全国超快光谱研讨会”，
-            也热忱欢迎国内外各厂商赞助会议并展示产品。相约岛城，共创未来！
+            山东大学是具有悠久历史的著名高校，山东大学青岛校区位于崂山脚下、鳌山湾畔， 地处青岛市“蓝色硅谷”核心
+            区，热忱欢迎各位同仁莅临“第五届全国超快光谱研讨会”， 也热忱欢迎国内外各厂商赞助会议并展示产品。
+            期待与您相约岛城，共创未来！
           </p>
         </div>
       </div>
@@ -59,10 +55,13 @@ export default function () {
             <a href="https://www.wjx.top/jq/63301164.aspx" alt="参会注册" target="_blank" rel="noopener noreferrer">参会注册</a>
           </Button>
           <Button type="primary" size="large" className={styles.button_item}>
-            <NavLink to="/info/hotel">酒店</NavLink>
+            <NavLink to="/payinfo">缴费信息</NavLink>
           </Button>
           <Button type="primary" size="large" className={styles.button_item}>
-            <NavLink to="/info/traffic">交通</NavLink>
+            <NavLink to="/message">投稿须知</NavLink>
+          </Button>
+          <Button type="primary" size="large" className={styles.button_item}>
+            <NavLink to="/info/traffic">酒店交通</NavLink>
           </Button>
         </div>
         <TitleBox title="重要日期" />
