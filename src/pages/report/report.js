@@ -1,9 +1,9 @@
 
-import styles from './report.css';
-
+// import styles from './report.css';
+import ComBox from '../../components/ComBox'
 export default function() {
   return (
-    <div className={styles.normal}>
-    </div>
+    <ComBox title="张贴报告">
+    </ComBox>
   );
 }

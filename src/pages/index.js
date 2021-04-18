@@ -68,12 +68,14 @@ export default function () {
         <div className={styles.list}>
           <ul className={styles.time_list}>
             <li>
-              <div className={styles.font}>摘要投稿截止日期</div>
+              <div className={styles.font}>摘要投稿截止</div>
               <p className={styles.color}>2021年6月10日</p>
-              <div className={styles.font}>优惠注册截止日期</div>
-              <p className={styles.color}>2021年6月20日</p>
-              <div className={styles.font}>优惠缴费截止日期</div>
+              <div className={styles.font}>优惠缴费截止</div>
+              <p className={styles.color}>2021年6月30日</p>
+              <div className={styles.font}>网上注册截止</div>
               <p className={styles.color}>2021年7月10日</p>
+              <div className={styles.font}>会议报道及现场注册</div>
+              <p className={styles.color}>2021年7月18日</p>
             </li>
           </ul>
         </div>
