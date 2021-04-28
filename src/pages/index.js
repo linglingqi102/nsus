@@ -2,8 +2,7 @@
 import styles from './index.less';
 import NavLink from 'umi/navlink';
 import TitleBox from '../components/TitleBox';
-import { Carousel } from 'antd';
-import { Button } from 'antd';
+import { Carousel, Button } from 'antd';
 export default function () {
   return (
     <div className={styles.normal}>
