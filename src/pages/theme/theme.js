@@ -4,9 +4,6 @@ import ComBox from '../../components/ComBox';
 export default function() {
   return (
     <ComBox title="会议主题">
-      <p className={styles.title}>
-        <strong>会议主题</strong>
-      </p>
       <p className={styles.content}>
         本次研讨会将以超快光谱研究中的新技术、新应用与挑战为主题，主要涵盖8个研究方向：
       </p>

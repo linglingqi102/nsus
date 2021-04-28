@@ -12,7 +12,7 @@ export default function () {
         <div className={styles.list}>
           <ul className={styles.msgs}>
             <li>
-              <p><a href="/">会议通知（第一轮）</a></p>
+              <p><a target="_blank" rel="noreferrer" alt="第一轮会议通知" href="http://nsus-static.oss-cn-beijing.aliyuncs.com/%E7%AC%AC%E4%BA%94%E5%B1%8A%E5%85%A8%E5%9B%BD%E8%B6%85%E5%BF%AB%E5%85%89%E8%B0%B1%E7%A0%94%E8%AE%A8%E4%BC%9A(%E7%AC%AC%E4%B8%80%E8%BD%AE%E9%80%9A%E7%9F%A5%EF%BC%89.pdf">会议通知（第一轮）</a></p>
               <p><a href="/">会议通知（第二轮）</a></p>
             </li>
           </ul>
@@ -58,10 +58,10 @@ export default function () {
             <NavLink to="/payinfo">缴费信息</NavLink>
           </Button>
           <Button type="primary" size="large" className={styles.button_item}>
-            <NavLink to="/message">投稿须知</NavLink>
+            <NavLink to="/info/hotel">酒店</NavLink>
           </Button>
           <Button type="primary" size="large" className={styles.button_item}>
-            <NavLink to="/info/traffic">酒店交通</NavLink>
+            <NavLink to="/info/traffic">交通</NavLink>
           </Button>
         </div>
         <TitleBox title="重要日期" />

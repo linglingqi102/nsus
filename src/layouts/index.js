@@ -46,9 +46,9 @@ function BasicLayout(props) {
         <Item key="/report">
           <NavLink to="/report">张贴报告</NavLink>
         </Item>
-        <Item key="/payinfo">
+        {/*<Item key="/payinfo">
           <NavLink to="/payinfo">缴费信息</NavLink>
-        </Item>
+        </Item>*/}
         <Item key="/message">
           <NavLink to="/message">投稿须知</NavLink>
         </Item>

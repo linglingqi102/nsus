@@ -6,7 +6,6 @@ export default function () {
   return (
     <ComBox title="组织机构">
       <div className={styles.news}>
-        <p className={styles.titlename}><strong>组织机构</strong></p>
         <p className={styles.title}><strong>会议名誉主席</strong></p>
         <div className={styles.first}>
           <div className={styles.item_first}>
@@ -47,22 +46,22 @@ export default function () {
               <td>王鸿飞</td>
               <td>王建平</td>
               <td>王  鹏</td>
+              <td>王学斌</td>
               <td>王朝晖</td>
-              <td>夏安东</td>
             </tr>
             <tr>
+              <td>夏安东</td>
               <td>许宜铭</td>
               <td>杨学明</td>
               <td>杨延强</td>
               <td>张  冰</td>
-              <td>张建平</td>
             </tr>
             <tr>
+              <td>张建平</td>
               <td>郑俊荣</td>
               <td>郑旭明</td>
               <td>仲冬平</td>
               <td>庄  巍</td>
-              <td>王学斌</td>
             </tr>
           </tbody>
         </table>

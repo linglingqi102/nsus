@@ -2,3 +2,7 @@
 .normal {
   background: #B4F279;
 }
+.message {
+  text-indent: 2em;
+  line-height: 2;
+}
