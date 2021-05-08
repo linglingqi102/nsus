@@ -7,4 +7,4 @@ yarn build;
 cd /home; 
 ./ossutil rm -rf oss://nsus-assets;
 ./ossutil cp /www/nsus/dist -r oss://nsus-assets; 
-pm2 restart nsus"
+pm2 restart server"
