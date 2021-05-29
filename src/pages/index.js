@@ -72,7 +72,7 @@ export default function () {
               <div className={styles.font}>优惠缴费截止</div>
               <p className={styles.color}>2021年6月30日</p>
               <div className={styles.font}>网上注册截止</div>
-              <p className={styles.color}>2021年7月10日</p>
+              <p className={styles.color}>2021年6月30日</p>
               <div className={styles.font}>会议报道及现场注册</div>
               <p className={styles.color}>2021年7月18日</p>
             </li>
