@@ -12,7 +12,8 @@ export default function () {
           <ul className={styles.msgs}>
             <li>
               <p><a target="_blank" rel="noreferrer" alt="第一轮会议通知" href="http://nsus-static.oss-cn-beijing.aliyuncs.com/%E7%AC%AC%E4%BA%94%E5%B1%8A%E5%85%A8%E5%9B%BD%E8%B6%85%E5%BF%AB%E5%85%89%E8%B0%B1%E7%A0%94%E8%AE%A8%E4%BC%9A(%E7%AC%AC%E4%B8%80%E8%BD%AE%E9%80%9A%E7%9F%A5%EF%BC%89.pdf">会议通知（第一轮）</a></p>
-              <p><a href="/">会议通知（第二轮）</a></p>
+              <p><a target="_blank" rel="noreferrer" alt="第二轮会议通知" href="http://nsus-static.oss-cn-beijing.aliyuncs.com/%E7%AC%AC%E4%BA%94%E5%B1%8A%E5%85%A8%E5%9B%BD%E8%B6%85%E5%BF%AB%E5%85%89%E8%B0%B1%E7%A0%94%E8%AE%A8%E4%BC%9A(%E7%AC%AC%E4%BA%8C%E8%BD%AE%E9%80%9A%E7%9F%A5%EF%BC%89.pdf">会议通知（第二轮）</a></p>
+              <p><a target="_blank" rel="noreferrer" alt="赞助方案" href="http://nsus-static.oss-cn-beijing.aliyuncs.com/%E7%AC%AC%E4%BA%94%E5%B1%8A%E5%85%A8%E5%9B%BD%E8%B6%85%E5%BF%AB%E5%85%89%E8%B0%B1%E7%A0%94%E8%AE%A8%E4%BC%9A%E8%B5%9E%E5%8A%A9%E6%96%B9%E6%A1%88.pdf">赞助方案</a></p>
             </li>
           </ul>
         </div>
