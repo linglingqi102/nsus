@@ -38,10 +38,10 @@ function BasicLayout(props) {
           <NavLink to="/meeting">会议日程</NavLink>
         </Item>
         <Item key="/conference">
-          <NavLink to="/conference">大会报告</NavLink>
+          <NavLink to="/conference">邀请报告</NavLink>
         </Item>
         <Item key="/invitation">
-          <NavLink to="/invitation">邀请报告</NavLink>
+          <NavLink to="/invitation">口头报告</NavLink>
         </Item>
         <Item key="/report">
           <NavLink to="/report">张贴报告</NavLink>

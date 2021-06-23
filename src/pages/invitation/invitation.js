@@ -4,7 +4,7 @@ import ComBox from '../../components/ComBox'
 
 export default function () {
   return (
-    <ComBox title="邀请报告">
+    <ComBox title="口头报告">
     </ComBox>
   );
 }
