@@ -12,10 +12,30 @@ export default function () {
       </div>
     </div>
       <div className={styles.sub}>
-        <div className={styles.sub_title}><h4>会务联系：</h4></div>
+        <div className={styles.sub_title}><h4>会务咨询（注册、投稿、酒店住宿、缴费及发票）：</h4></div>
         <div className={styles.sub_content}>
-          <p>张  洁：0532-58632168  13061370150</p>
-          <p>郑道元：0532-58632168  13478599264</p>
+          <p>张洁：0532-58632168  18438570716</p>
+        </div>
+      </div>
+      <div className={styles.sub}>
+        <div className={styles.sub_title}><h4>赞助联系：</h4></div>
+        <div className={styles.sub_content}>
+          <p>金老师：13971603918   Email：jinbing@sdu.edu.cn</p>
+          <p>郑老师：13478599264   Email：zhengdy@sdu.edu.cn</p>
+          <p>张老师：17615041608   Email：rlzhang@sdu.edu.cn</p>
+        </div>
+      </div>
+      <div className={styles.sub}>
+        <div className={styles.sub_title}><h4>会场与墙报：</h4></div>
+        <div className={styles.sub_content}>
+            <p>郑老师：13478599264   Email：zhengdy@sdu.edu.cn</p>
+        </div>
+      </div>
+      <div className={styles.sub}>
+        <div className={styles.sub_title}><h4>班车与交通：</h4></div>
+        <div className={styles.sub_content}>
+          <p>张老师：17615041608   Email：rlzhang@sdu.edu.cn</p>
+          <p>毛老师：17615040316   Email：maoxin@sdu.edu.cn</p>
         </div>
       </div>
       <div className={styles.sub}>
