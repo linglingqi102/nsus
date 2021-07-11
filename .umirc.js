@@ -3,6 +3,7 @@ const { join } = require('path');
 
 const isDev = process.env.NODE_ENV === 'development';
 const root = join(__dirname, 'src');
+
 export default {
   treeShaking: true,
   ssr: true,
